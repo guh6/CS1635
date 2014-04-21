@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B03060"
+    android:orientation="vertical"
+    tools:context=".RandomCountingActivity" 
+    >
+
+    <LinearLayout
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#B03060"
+    	android:orientation="horizontal">
+    	
+        <ImageButton 
+       	android:id="@+id/home_random"
+       	android:contentDescription="@string/go_user_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/return_home"
+        android:onClick="goHome"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/random_buttons"
+      />
+        
+  <ImageButton 
+      android:id="@+id/stop_game_random"
+      android:contentDescription="@string/save_game"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toLeftOf="@id/home_random"
+      android:layout_alignParentTop="true"
+      android:src="@drawable/stop_game"
+      android:onClick="stopGame"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      android:background="@drawable/random_buttons"
+      />
+   <ImageButton 
+      android:id="@+id/play_instructs_random"
+      android:contentDescription="@string/play_sound"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toLeftOf="@id/stop_game_random"
+      android:layout_alignParentTop="true"
+      android:src="@drawable/sound"
+      android:onClick="playInstructions"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      android:background="@drawable/random_buttons"
+      />
+   <ImageView 
+      android:id="@+id/star1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toLeftOf="@id/play_instructs_random"
+      android:contentDescription="@string/star"
+      android:src="@drawable/star" />
+     <ImageView 
+      android:id="@+id/star2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toLeftOf="@id/star1"
+      android:contentDescription="@string/star"
+      android:src="@drawable/star" />
+   <ImageView 
+      android:id="@+id/star3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toLeftOf="@id/star2"
+      android:contentDescription="@string/star"
+      android:src="@drawable/star" />
+  <ImageView 
+      android:id="@+id/star4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toLeftOf="@id/star3"
+      android:contentDescription="@string/star"
+      android:src="@drawable/star" />
+	<ImageView 
+      android:id="@+id/star5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toLeftOf="@id/star4"
+      android:contentDescription="@string/star"
+      android:src="@drawable/star" />
+    </LinearLayout>
+	
+	
+	<GridView
+	    android:layout_marginTop="5dp"
+    	android:layout_marginBottom="5dp"
+	    android:paddingTop="5dp"
+	    android:paddingBottom="5dp"
+	    android:layout_marginLeft="5dp"
+    	android:layout_marginRight="5dp"
+	    android:id="@+id/random_gridview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:verticalSpacing="3dp"
+	    android:horizontalSpacing="5dp"
+	    android:columnWidth="40dp"
+	    android:stretchMode="columnWidth"
+	    android:numColumns="auto_fit"
+	    android:background="#FFE600">
+	</GridView>	
+
+</LinearLayout>

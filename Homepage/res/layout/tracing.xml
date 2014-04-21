@@ -1,0 +1,29 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+     <ImageButton 
+       	android:id="@+id/soundbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sound"
+        android:onClick="PlaySoundAgain"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+      />
+     
+     <RelativeLayout
+    	android:id="@+id/drawlayout"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+        android:layout_below="@+id/soundbutton">
+     </RelativeLayout>
+     
+     
+     
+</RelativeLayout>
